@@ -6,159 +6,508 @@
 <!-- By: bduron <marvin@42.fr>                      +#+  +:+       +#+       -->
 <!--                                              +#+#+#+#+#+   +#+          -->
 <!-- Created: 2017/04/03 11:04:32 by bduron            #+#    #+#            -->
-<!-- Updated: 2017/04/03 11:58:22 by bduron           ###   ########.fr      -->
+<!-- Updated: 2017/04/03 14:50:58 by bduron           ###   ########.fr      -->
 <!--                                                                         -->
 <!-- *********************************************************************** -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Periodic table</title>
-	<style>
-		table {border-spacing: 5px;}
-		td {background-color: grey; padding: 20px; width: 10%;}	
-		.empty {background-color: white;}
-		.poids { text-align: right;}
-		.num {text-align: left;}
-		.elem {text-align: center;}
-	
-	</style>
-</head>
-<body>
-	<div class="wrapper">
-		<table contenteditable="true">
-			<tr>
-				<td>
-					<p class="poids">1.008</p>
-					<h2 class="elem">H</p>
-					<p class="num">1</p>
-				</td>
-				<td colspan="16" class="empty"></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
-	
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Periodic table</title>
+		<style>
+			table {border-spacing: 5px;}
+			td {background-color: grey; padding: 10px; width: 200px;}	
+			.empty {background-color: white;}
+			.poids {text-align: right;}
+			.num { text-align: left;}
+			.elem {text-align: center;}
+			.blue {background-color: aqua;}
+			.yellow {background-color: yellow;}
+			.orange {background-color: orange;}
+			.green {background-color: palegreen;}
+			.pink {background-color: pink;}
+			.lightred {background-color: salmon;}
+			.red {background-color: orangered;}
+			.magenta {background-color: hotpink;}
+			.teal {background-color: teal;}
+			.salmon {background-color: lightsalmon;}
+			.turquoise {background-color: paleturquoise;}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<table contenteditable="true">
+				<tr>
+					<td class="yellow">
+						<p class="poids">1.008</p>
+						<h2 class="elem">H</h2>
+						<p class="num">1</p>
+					</td>
+					<td colspan="16" class="empty"></td>
+					<td class="magenta">
+						<p class="poids">4.003</p>
+						<h2 class="elem">He</h2>
+						<p class="num">2</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						<p class="poids">6.941</p>
+						<h2 class="elem">Li</h2>
+						<p class="num">3</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">9.012</p>
+						<h2 class="elem">Be</h2>
+						<p class="num">4</p>
+					</td>
+					<td colspan="10" class="empty"></td>
+					<td class="lightred">
+						<p class="poids">10.811</p>
+						<h2 class="elem">B</h2>
+						<p class="num">5</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">12.010</p>
+						<h2 class="elem">C</h2>
+						<p class="num">6</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">14.006</p>
+						<h2 class="elem">N</h2>
+						<p class="num">7</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">15.999</p>
+						<h2 class="elem">O</h2>
+						<p class="num">8</p>
+					</td>
+					<td class="red">
+						<p class="poids">18.998</p>
+						<h2 class="elem">F</h2>
+						<p class="num">9</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">20.179</p>
+						<h2 class="elem">Ne</h2>
+						<p class="num">10</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						<p class="poids">22.989</p>
+						<h2 class="elem">Na</h2>
+						<p class="num">11</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">24.305</p>
+						<h2 class="elem">Mg</h2>
+						<p class="num">12</p>
+					</td>
+					<td colspan="10" class="empty"></td>
+					<td class="pink">
+						<p class="poids">26.981</p>
+						<h2 class="elem">Al</h2>
+						<p class="num">13</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">28.085</p>
+						<h2 class="elem">Si</h2>
+						<p class="num">14</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">30.973</p>
+						<h2 class="elem">P</h2>
+						<p class="num">15</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">32.065</p>
+						<h2 class="elem">S</h2>
+						<p class="num">16</p>
+					</td>
+					<td class="red">
+						<p class="poids">35.453</p>
+						<h2 class="elem">Cl</h2>
+						<p class="num">17</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">39.948</p>
+						<h2 class="elem">Ar</h2>
+						<p class="num">18</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						<p class="poids">39.098</p>
+						<h2 class="elem">K</h2>
+						<p class="num">19</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">40.078</p>
+						<h2 class="elem">Ca</h2>
+						<p class="num">20</p>
+					</td>
+					<td class="green">
+						<p class="poids">44.955</p>
+						<h2 class="elem">Sc</h2>
+						<p class="num">21</p>
+					</td>
+					<td class="green">
+						<p class="poids">47.867</p>
+						<h2 class="elem">Ti</h2>
+						<p class="num">22</p>
+					</td>
+					<td class="green">
+						<p class="poids">50.941</p>
+						<h2 class="elem">V</h2>
+						<p class="num">23</p>
+					</td>
+					<td class="green">
+						<p class="poids">51.996</p>
+						<h2 class="elem">Cr</h2>
+						<p class="num">24</p>
+					</td>
+					<td class="green">
+						<p class="poids">54.938</p>
+						<h2 class="elem">Mn</h2>
+						<p class="num">25</p>
+					</td>
+					<td class="green">
+						<p class="poids">55.845</p>
+						<h2 class="elem">Fe</h2>
+						<p class="num">26</p>
+					</td>
+					<td class="green">
+						<p class="poids">58.933</p>
+						<h2 class="elem">Co</h2>
+						<p class="num">27</p>
+					</td>
+					<td class="green">
+						<p class="poids">58.693</p>
+						<h2 class="elem">Ni</h2>
+						<p class="num">28</p>
+					</td>
+					<td class="green">
+						<p class="poids">63.546</p>
+						<h2 class="elem">Cu</h2>
+						<p class="num">29</p>
+					</td>
+					<td class="green">
+						<p class="poids">65.38</p>
+						<h2 class="elem">Zn</h2>
+						<p class="num">30</p>
+					</td>
+					<td class="pink">
+						<p class="poids">69.723</p>
+						<h2 class="elem">Ga</h2>
+						<p class="num">31</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">72.63</p>
+						<h2 class="elem">Ge</h2>
+						<p class="num">32</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">74.921</p>
+						<h2 class="elem">As</h2>
+						<p class="num">33</p>
+					</td>
+					<td class="yellow">
+						<p class="poids">78.96</p>
+						<h2 class="elem">Se</h2>
+						<p class="num">34</p>
+					</td>
+					<td class="red">
+						<p class="poids">79.904</p>
+						<h2 class="elem">Br</h2>
+						<p class="num">35</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">83.798</p>
+						<h2 class="elem">Kr</h2>
+						<p class="num">36</p>
+					</td>
+				</tr>
+				<tr>
+
+					<td class="blue">
+						<p class="poids">85.467</p>
+						<h2 class="elem">Rb</h2>
+						<p class="num">37</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">87.62</p>
+						<h2 class="elem">Sr</h2>
+						<p class="num">38</p>
+					</td>
+					<td class="green">
+						<p class="poids">88.905</p>
+						<h2 class="elem">Y</h2>
+						<p class="num">39</p>
+					</td>
+					<td class="green">
+						<p class="poids">91.224</p>
+						<h2 class="elem">Zr</h2>
+						<p class="num">40</p>
+					</td>
+					<td class="green">
+						<p class="poids">92.906</p>
+						<h2 class="elem">Nb</h2>
+						<p class="num">41</p>
+					</td>
+					<td class="green">
+						<p class="poids">95.96</p>
+						<h2 class="elem">Mo</h2>
+						<p class="num">42</p>
+					</td>
+					<td class="green">
+						<p class="poids">98</p>
+						<h2 class="elem">Tc</h2>
+						<p class="num">43</p>
+					</td>
+					<td class="green">
+						<p class="poids">101.07</p>
+						<h2 class="elem">Ru</h2>
+						<p class="num">44</p>
+					</td>
+					<td class="green">
+						<p class="poids">102.905</p>
+						<h2 class="elem">Rh</h2>
+						<p class="num">45</p>
+					</td>
+					<td class="green">
+						<p class="poids">106.42</p>
+						<h2 class="elem">Pd</h2>
+						<p class="num">46</p>
+					</td>
+					<td class="green">
+						<p class="poids">107.868</p>
+						<h2 class="elem">Ag</h2>
+						<p class="num">47</p>
+					</td>
+					<td class="green">
+						<p class="poids">112.411</p>
+						<h2 class="elem">Cd</h2>
+						<p class="num">48</p>
+					</td>
+					<td class="pink">
+						<p class="poids">114.818</p>
+						<h2 class="elem">In</h2>
+						<p class="num">49</p>
+					</td>
+					<td class="pink">
+						<p class="poids">118.71</p>
+						<h2 class="elem">Sn</h2>
+						<p class="num">50</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">121.76</p>
+						<h2 class="elem">Sb</h2>
+						<p class="num">51</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">127.6</p>
+						<h2 class="elem">Te</h2>
+						<p class="num">52</p>
+					</td>
+					<td class="red">
+						<p class="poids">126.904</p>
+						<h2 class="elem">I</h2>
+						<p class="num">53</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">131.293</p>
+						<h2 class="elem">Xe</h2>
+						<p class="num">54</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						<p class="poids">132.905</p>
+						<h2 class="elem">Cs</h2>
+						<p class="num">55</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">137.327</p>
+						<h2 class="elem">Ba</h2>
+						<p class="num">56</p>
+					</td>
+					<td class="turquoise">
+						<p class="poids">138.9-175.0</p>
+						<h2 class="elem">La-Lu</h2>
+						<p class="num">57-71</p>
+					</td>
+					<td class="green">
+						<p class="poids">178.49</p>
+						<h2 class="elem">Hf</h2>
+						<p class="num">72</p>
+					</td>
+					<td class="green">
+						<p class="poids">180.947</p>
+						<h2 class="elem">Ta</h2>
+						<p class="num">73</p>
+					</td>
+					<td class="green">
+						<p class="poids">183.84</p>
+						<h2 class="elem">W</h2>
+						<p class="num">74</p>
+					</td>
+					<td class="green">
+						<p class="poids">186.207</p>
+						<h2 class="elem">Re</h2>
+						<p class="num">75</p>
+					</td>
+					<td class="green">
+						<p class="poids">190.23</p>
+						<h2 class="elem">Os</h2>
+						<p class="num">76</p>
+					</td>
+					<td class="green">
+						<p class="poids">192.217</p>
+						<h2 class="elem">Ir</h2>
+						<p class="num">77</p>
+					</td>
+					<td class="green">
+						<p class="poids">195.084</p>
+						<h2 class="elem">Pt</h2>
+						<p class="num">78</p>
+					</td>
+					<td class="green">
+						<p class="poids">196.966</p>
+						<h2 class="elem">Au</h2>
+						<p class="num">79</p>
+					</td>
+					<td class="green">
+						<p class="poids">200.59</p>
+						<h2 class="elem">Hg</h2>
+						<p class="num">80</p>
+					</td>
+					<td class="pink">
+						<p class="poids">204.383</p>
+						<h2 class="elem">Tl</h2>
+						<p class="num">81</p>
+					</td>
+					<td class="pink">
+						<p class="poids">207.2</p>
+						<h2 class="elem">Pb</h2>
+						<p class="num">82</p>
+					</td>
+					<td class="pink">
+						<p class="poids">208.980</p>
+						<h2 class="elem">Bi</h2>
+						<p class="num">83</p>
+					</td>
+					<td class="lightred">
+						<p class="poids">209</p>
+						<h2 class="elem">Po</h2>
+						<p class="num">84</p>
+					</td>
+					<td class="red">
+						<p class="poids">210</p>
+						<h2 class="elem">At</h2>
+						<p class="num">85</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">222</p>
+						<h2 class="elem">Rn</h2>
+						<p class="num">86</p>
+					</td>
+				</tr>
+				<tr>
+					<td class="blue">
+						<p class="poids">223</p>
+						<h2 class="elem">Fr</h2>
+						<p class="num">87</p>
+					</td>
+					<td class="salmon">
+						<p class="poids">226</p>
+						<h2 class="elem">Ra</h2>
+						<p class="num">88</p>
+					</td>
+					<td class="teal">
+						<p class="poids">227-262</p>
+						<h2 class="elem">Ac-Lr</h2>
+						<p class="num">89-103</p>
+					</td>
+					<td class="green">
+						<p class="poids">267</p>
+						<h2 class="elem">Rf</h2>
+						<p class="num">104</p>
+					</td>
+					<td class="green">
+						<p class="poids">268</p>
+						<h2 class="elem">Db</h2>
+						<p class="num">105</p>
+					</td>
+					<td class="green">
+						<p class="poids">271</p>
+						<h2 class="elem">Sg</h2>
+						<p class="num">106</p>
+					</td>
+					<td class="green">
+						<p class="poids">272</p>
+						<h2 class="elem">Bh</h2>
+						<p class="num">107</p>
+					</td>
+					<td class="green">
+						<p class="poids">270</p>
+						<h2 class="elem">Hs</h2>
+						<p class="num">108</p>
+					</td>
+					<td class="green">
+						<p class="poids">276</p>
+						<h2 class="elem">Mt</h2>
+						<p class="num">109</p>
+					</td>
+					<td class="green">
+						<p class="poids">281</p>
+						<h2 class="elem">Ds</h2>
+						<p class="num">110</p>
+					</td>
+					<td class="green">
+						<p class="poids">280</p>
+						<h2 class="elem">Rg</h2>
+						<p class="num">111</p>
+					</td>
+					<td class="green">
+						<p class="poids">285</p>
+						<h2 class="elem">Cn</h2>
+						<p class="num">112</p>
+					</td>
+					<td class="pink">
+						<p class="poids">286</p>
+						<h2 class="elem">Nh</h2>
+						<p class="num">113</p>
+					</td>
+					<td class="pink">
+						<p class="poids">289</p>
+						<h2 class="elem">Fl</h2>
+						<p class="num">114</p>
+					</td>
+					<td class="pink">
+						<p class="poids">289</p>
+						<h2 class="elem">Mc</h2>
+						<p class="num">115</p>
+					</td>
+					<td class="pink">
+						<p class="poids">293</p>
+						<h2 class="elem">Lv</h2>
+						<p class="num">116</p>
+					</td>
+					<td class="red">
+						<p class="poids">294</p>
+						<h2 class="elem">Ts</h2>
+						<p class="num">117</p>
+					</td>
+					<td class="magenta">
+						<p class="poids">294</p>
+						<h2 class="elem">Og</h2>
+						<p class="num">118</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</body>
 </html>

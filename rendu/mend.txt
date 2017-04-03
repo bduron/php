@@ -1,0 +1,70 @@
+<td>
+<p class="poids">268</p>
+<h2 class="elem">Db</h2>
+<p class="num">105</p>
+</td>
+<td>
+<p class="poids">271</p>
+<h2 class="elem">Sg</h2>
+<p class="num">106</p>
+</td>
+<td>
+<p class="poids">272</p>
+<h2 class="elem">Bh</h2>
+<p class="num">107</p>
+</td>
+<td>
+<p class="poids">270</p>
+<h2 class="elem">Hs</h2>
+<p class="num">108</p>
+</td>
+<td>
+<p class="poids">276</p>
+<h2 class="elem">Mt</h2>
+<p class="num">109</p>
+</td>
+<td>
+<p class="poids">281</p>
+<h2 class="elem">Ds</h2>
+<p class="num">110</p>
+</td>
+<td>
+<p class="poids">280</p>
+<h2 class="elem">Rg</h2>
+<p class="num">111</p>
+</td>
+<td>
+<p class="poids">285</p>
+<h2 class="elem">Cn</h2>
+<p class="num">112</p>
+</td>
+<td>
+<p class="poids">284</p>
+<h2 class="elem">Uut</h2>
+<p class="num">113</p>
+</td>
+<td>
+<p class="poids">289</p>
+<h2 class="elem">Fl</h2>
+<p class="num">114</p>
+</td>
+<td>
+<p class="poids">288</p>
+<h2 class="elem">Uup</h2>
+<p class="num">115</p>
+</td>
+<td>
+<p class="poids">293</p>
+<h2 class="elem">Lv</h2>
+<p class="num">116</p>
+</td>
+<td>
+<p class="poids">294</p>
+<h2 class="elem">Uus</h2>
+<p class="num">117</p>
+</td>
+<td>
+<p class="poids">294</p>
+<h2 class="elem">Uuo</h2>
+<p class="num">118</p>
+</td>
