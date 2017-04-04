@@ -4,7 +4,7 @@ body {
 
 .wrapper {
 	width: 1900px;
-	height: 1200px;
+	height: 1200px; 
 	border : 5px solid red; 
 	margin: 0px auto;
 	margin-top: 20px;
@@ -94,6 +94,7 @@ body {
 	margin-bottom: 10%;
 }
 
+
 .input-box {
 	position: relative;
 	width: 700px;
@@ -105,8 +106,21 @@ body {
 	border-radius: 20px;
 	
 }
+
+/*
+.input-text {
+	font-size: TO DEF ;
+	font-family: TO DEF;  
+}
+
+*/
+#entrez {
+	font-size: 20px;
+}
+
 .label {
 	border-top: 2px solid #9a9b9c;
+	width: 80%;
 }
 
 .loupe {
@@ -136,4 +150,4 @@ body {
 	border-radius: 6px;
 }
 
-  body {background-image: url("day42.png"); } 
+ /*  body {background-image: url("day42.png"); } 

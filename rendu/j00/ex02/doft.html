@@ -21,9 +21,9 @@
 	 <div class="wrapper"> 
 		<div class="header">
 			<div class="icons" align="right">
-				<img src="resources/reload.png" alt="reload" title="reload" width="20%" style="margin-bottom: 100px">
+				<a href="http://www.disney.com"><img src="resources/reload.png" alt="reload" title="Recommencer au début" width="20%" style="margin-bottom: 100px"></a>
 				<br>
-				<img src="resources/close.gif" alt="close" title="close">
+				<a href="http://www.relaischateaux.com"><img src="resources/close.gif" alt="close" title="Déconnecter"></a>
 			</div>
 			<div class="loupe">
 				<img id="loupe" src="resources/loupe.png" alt="loupe" title="loupe">
@@ -32,25 +32,29 @@
 		</div>
 		<div class="content">
 			<div class="left">
-				<img src="resources/arrow.png" alt="" width="50%">
-				<img src="resources/main.png" alt="" width="50%">
-				<img id="eye" src="resources/oeil.png" alt="" width="50%">
-				<img src="resources/outil.png" alt="" width="50%">
-				<img src="resources/chat-icon.png" alt="" width="50%">
+				<img src="resources/arrow.png" alt="Avancer" title="Avancer" width="50%">
+				<img src="resources/main.png" alt="Prendre"  title="Prendre"width="50%">
+				<img id="eye" src="resources/oeil.png" alt="Regarder" title="Regarder" width="50%">
+				<img src="resources/outil.png" alt="Utiliser" title="Utiliser" width="50%">
+				<img src="resources/chat-icon.png" alt="Parler" title="Parler" width="50%">
 			</div>
 			<div class="hero">
-				<img src="resources/cluster.jpg" alt="" width="100%">
+				<img src="resources/cluster.jpg" alt="Cluster" title="Cluster" width="100%" usemap="#cluster-map">
+		<!--		<map name="cluster-map"> 
+					<area shape="rect" coords="TODEF" href="http://www.ikea.com" alt="ikea">				
+					<area shape="rect" coords="TODEF" href="http://www.apple.com" alt="apple">	-->			
+				</map>
 			</div>
 			<div class="right">
-				<img src="resources/book.png" alt="" width="50%">
-				<img src="resources/towel.png" alt="" width="50%">
-				<div class="brick"></div>
+				<img src="resources/book.png" alt="Livre" title="Livre" width="50%">
+				<img src="resources/towel.png" alt="Serviette" title="Serviette" width="50%">
+				<div class="brick"></div> <!-- BG IMG title & alt to add-->
 			</div>
 		</div>
 		<div class="input-box">
-			<p>Vous entrez dans uen salle remplie d'ordinateurs...</p>
+			<p class="input-text">Vous <span id="entrez">entrez</span> dans une grande piece remplie d'ordinateurs...</p>
 			<br>	
-			<p>- Bonjour, vous êtes nouveau ici ?</p>
+			<p style="font-style: italic">- Bonjour, vous êtes nouveau ici ?</p>
 			<input type="text" class="label" >
 			<input type="submit" value="Repondre">
 		</div>
@@ -58,3 +62,4 @@
 
 </body>
 </html>
+!

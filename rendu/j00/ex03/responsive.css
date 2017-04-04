@@ -1,0 +1,21 @@
+
+table {border-spacing: 2%;}
+td {background-color: grey; padding: 10px; width: 200px;}	
+.table-title {font-size: 60px; text-align: center}
+.wrapper {height: 700px;}
+.empty {background-color: white;}
+.poids {text-align: right;}
+.num { text-align: left;}
+.elem {text-align: center;}
+.blue {background-color: aqua;}
+.yellow {background-color: yellow;}
+.orange {background-color: orange;}
+.green {background-color: palegreen;}
+.pink {background-color: pink;}
+.lightred {background-color: salmon;}
+.red {background-color: orangered;}
+.magenta {background-color: hotpink;}
+.teal {background-color: teal;}
+.salmon {background-color: lightsalmon;}
+.turquoise {background-color: paleturquoise;}
+.legend {background-color: whitesmoke; font-size: 20px;}
