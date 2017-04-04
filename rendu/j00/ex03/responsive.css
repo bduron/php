@@ -1,12 +1,12 @@
 
 table {border-spacing: 2%;}
-td {background-color: grey; padding: 10px; width: 200px;}	
-.table-title {font-size: 60px; text-align: center}
+td {background-color: grey; padding: 10px; width: 5vw;}	
+.table-title {font-size: 3vw; text-align: center}
 .wrapper {height: 700px;}
 .empty {background-color: white;}
-.poids {text-align: right;}
-.num { text-align: left;}
-.elem {text-align: center;}
+.poids {font-size:0.5vw;  text-align: right;}
+.num {font-size:0.5vw; text-align: left;}
+.elem {font-size:1vw; text-align: center;}
 .blue {background-color: aqua;}
 .yellow {background-color: yellow;}
 .orange {background-color: orange;}
@@ -18,4 +18,4 @@ td {background-color: grey; padding: 10px; width: 200px;}
 .teal {background-color: teal;}
 .salmon {background-color: lightsalmon;}
 .turquoise {background-color: paleturquoise;}
-.legend {background-color: whitesmoke; font-size: 20px;}
+.legend {background-color: whitesmoke; font-size: 1vw;}

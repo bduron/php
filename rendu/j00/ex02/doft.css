@@ -5,7 +5,7 @@ body {
 .wrapper {
 	width: 1900px;
 	height: 1200px; 
-	border : 5px solid red; 
+/*	border : 5px solid red; */ 
 	margin: 0px auto;
 	margin-top: 20px;
 }
@@ -69,7 +69,7 @@ body {
 	border-radius: 10px;
 	margin-top: 1%;
 	background-color: #909090;
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,75)
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,75);
 }
 
 .right {
@@ -101,26 +101,57 @@ body {
 	height: 230px;
 	top: -17%;
 	left: -4%;	
-	border : 5px solid lime; 
-	/* background-color: #8CFD8E; */
+	/* border : 5px solid lime; */
+	background-color: #8CFD8E; 
 	border-radius: 20px;
+	padding: 12px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,75)
 	
 }
 
-/*
+
 .input-text {
-	font-size: TO DEF ;
-	font-family: TO DEF;  
+	font-size: 21px;
+	font-family: verdana;  
+	margin:0;
 }
 
-*/
+#bonjour {
+	font-size: 21px;
+	font-family: verdana;  
+	font-style: italic;
+	margin:0;
+	margin-bottom: 5px;
+}
+
 #entrez {
-	font-size: 20px;
+	font-size: 46px;
+	font-family: georgia;
+}
+
+
+#ordinateur {
+	text-shadow: 5px 5px 5px rgba(193, 139, 81, 1);
+
 }
 
 .label {
 	border-top: 2px solid #9a9b9c;
-	width: 80%;
+	width: 73%;
+	height: 10%;
+}
+
+.input-button {
+	border: 1px solid #B4A6B0;
+	width: 15%;
+	height: 12%;
+	margin-left:1%;
+	font-size: 17px;
+	border-radius: 3px;
+	background-color: #E7E7E7;
+	background: linear-gradient(to bottom, #f9faf8 0%,#e0e0e0 100%);
+	box-shadow: 0px 0px 1px 0px rgba(144,144,144,5);
+	color: #262626;
 }
 
 .loupe {
@@ -150,4 +181,4 @@ body {
 	border-radius: 6px;
 }
 
- /*  body {background-image: url("day42.png"); } 
+  /* body {background-image: url("day42.png"); } */
