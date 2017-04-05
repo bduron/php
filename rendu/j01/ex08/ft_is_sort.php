@@ -1,28 +1,15 @@
-#!/usr/bin/php
 <?php
-
 function ft_is_sort($tab)
 {
-	$ascending = $tab; 
-	$descending = $tab; 
+	$sorted = $tab; 
 	
-	sort($ascending);
-	arsort($descending);
-	print_r($tab);
-	print_r($ascending);
-	print_r($descending);
-
-	if (array_diff_assoc($tab, $ascending) == false)
-		return (true);
-	if (array_diff_assoc($tab, $descending) == false)
-		return (true);
-	return (false);
+	sort($sorted);
+	if (array_diff_assoc($tab, $sorted))
+	{
+		arsort($sorted);	
+		if (array_diff_assoc($tab, array_merge($sorted)))
+			return (false);
+	}
+	return (true);
 }
-
-$tab = ["z", "b", "c", "d", "e"];
-if (ft_is_sort($tab))
-	print("true");
-else
-	print("false");
-
 ?>

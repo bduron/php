@@ -14,5 +14,6 @@ function print_trimmed($str)
 
 $str = trim($argv[1]);		
 print_trimmed($str);
-print("\n");
+if ($argc != 1)
+	print("\n");
 ?>

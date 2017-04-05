@@ -1,8 +1,0 @@
-#!/usr/bin/php
-<?PHP
-include("ft_split.php");
-print_r(ft_split("Hello          World       AAA        CCCD DDDD   Z    "));
-print_r(ft_split(" "));
-print_r(ft_split(""));
-print_r(ft_split("a"));
-?>
