@@ -13,6 +13,7 @@ while(($num = fgets(STDIN)) != false)
 	}
 	else 
 		print("'{$num}' n'est pas un chiffre\n");
-	print("Entrez un nombre: ");
+	print("Entrez un nombre: ");	
 }
+echo "\n";	
 ?>
