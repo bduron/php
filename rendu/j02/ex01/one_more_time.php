@@ -1,8 +1,8 @@
 #!/usr/bin/php
 <?php
 $matches = [];
-$pattern = "/([Ll]undi|[Mm]ardi|[Mm]ercredi|[Jj]eudi|[Vv]endredi|[Ss]amedi|[Dd]imanche)\s+(\d{1,2})\s+([Jj]anvier|[Ff][eé]vrier|[Mm]ars|[Aa]vril|[Mm]ai|[Jj]uin|[Jj]uillet|[Aa]o[uû]t|[Ss]eptembre|[Oo]ctobre|[Nn]ovembre|[Dd][eé]cembre)\s+(\d{4})\s+(\d{2}:\d{2}:\d{2})/";
-if (preg_match($pattern, $argv[1], $matches) === false)
+$pattern = "/^\s*([Ll]undi|[Mm]ardi|[Mm]ercredi|[Jj]eudi|[Vv]endredi|[Ss]amedi|[Dd]imanche)\s+(\d{1,2})\s+([Jj]anvier|[Ff][eé]vrier|[Mm]ars|[Aa]vril|[Mm]ai|[Jj]uin|[Jj]uillet|[Aa]o[uû]t|[Ss]eptembre|[Oo]ctobre|[Nn]ovembre|[Dd][eé]cembre)\s+(\d{4})\s+(\d{2}:\d{2}:\d{2})\s*$/";
+if (preg_match($pattern, $argv[1], $matches) == false)
 {
 	print("Wrong Format\n");
 	return (1);
@@ -18,6 +18,9 @@ foreach ($month as $reg => $num)
 date_default_timezone_set('Europe/Berlin');
 $str = date("$matches[3]/$matches[2]/$matches[4] $matches[5]");
 
-print(strtotime($str)."\n");
+if (($timestamp = strtotime($str)) == false)
+	print("Wrong Format\n");
+else
+	print($timestamp."\n");
 
 ?>
