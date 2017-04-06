@@ -1,3 +1,4 @@
+#!/usr/bin/php
 <?php
 
 function callback($matches)
@@ -23,6 +24,7 @@ function main($argc, $argv)
 	if ($argc != 2)
 		return (0);
 
+	file_exists($argv[1]) or die("$argv[1] not found\n"); 	
 	$file = file_get_contents($argv[1]) or die("Failed to open file\n");
 	$test = preg_replace_callback('/<a.*?\/a>/s', "callback", $file);
 	echo $test;
