@@ -1,18 +1,26 @@
 #!/usr/bin/php
 <?php
 
-	if (!$fp = fopen ('/var/run/utmp', 'rb'))
-		return (0);
+function main()
+{
+	date_default_timezone_set('Europe/Berlin');
+	$user = get_current_user();
+	$utmpx_header = 'a256user/a4id/a32line/ipid/itype/I2time/a256host/i16pad';	
+	$offset = 628;
+	$fp = fopen('/var/run/utmpx', 'rb');
 	
-	if (!$data = fread($fp, 1000)) 
-		return (0);
-	
-	$header_fmt = 'A200test';
+	while ((($utmpx = fread($fp, 628))))
+	{	
+		$who = unpack($utmpx_header, $utmpx);
+			
+		if (trim($who['user']) === trim($user))
+			$array[] = array_map("trim", $who);
+	}
+	array_multisort($array);
+	foreach ($array as $who)
+		print($who['user']."   ".$who['line']."  ".date("M  j H:i", $who['time1'])." \n");	
+}
 
-	
-	$header = unpack($header_fmt, $data);
-
-	print_r($header);
-
+main();
 
 ?>
