@@ -1,1 +1,1 @@
-SELECT titre, resum FROM film WHERE lower(film.resum) LIKE '%vincent%';
+SELECT titre, resum FROM film WHERE lower(resum) REGEXP 'vincent' ORDER BY id_film ASC;

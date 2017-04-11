@@ -1,1 +1,1 @@
-CREATE DATABASE db_bduron;
+CREATE DATABASE IF NOT EXISTS db_bduron;
