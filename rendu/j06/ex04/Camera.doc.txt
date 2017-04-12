@@ -1,2 +1,27 @@
-helloo
 
+<- Camera ----------------------------------------------------------------------
+The Camera class handles the transformation of a "world" coordinates to a 
+"screen" coordinates. (eg. 3D point to 2D representation) 
+
+An instance can be constructed from an 'origin', 'orientation', 'width', 
+   'length', 'fov', 'near', 'far' where: 
+
+   - origin == a Vertex
+   - orientation == a Matrix 
+   - width, height, fov == int values
+   - near, far == float value
+
+   new Camera( array( 'origin' => Vector,
+			   'orientation' => Matrix,
+			   'width' => width,
+			   'height' => height,
+			   'fov' => fov,
+			   'near' => near,
+			   'far' => far) );
+    
+The class provide the following method :
+Vertex watchVertex( Vertex $worldVertex )
+
+Which transform a 3D point to a 2D point. 
+
+---------------------------------------------------------------------- Camera ->
