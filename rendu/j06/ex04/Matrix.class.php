@@ -146,6 +146,17 @@ class Matrix
 							'y' => $this->_matrix[1][0] * $vtx->getX() + $this->_matrix[1][1] * $vtx->getY() + $this->_matrix[1][2] * $vtx->getZ() + $this->_matrix[1][3], 
 							'z' => $this->_matrix[2][0] * $vtx->getX() + $this->_matrix[2][1] * $vtx->getY() + $this->_matrix[2][2] * $vtx->getZ() + $this->_matrix[2][3]]); 
 	}
+
+	public function transposeMatrix()
+	{
+		$tMtx = clone $this;
+
+		$tMtx->_matrix = [	[ $this->_matrix[0][0], $this->_matrix[1][0], $this->_matrix[2][0], $this->_matrix[3][0]], 
+							[ $this->_matrix[0][1], $this->_matrix[1][1], $this->_matrix[2][1], $this->_matrix[3][1]], 
+							[ $this->_matrix[0][2], $this->_matrix[1][2], $this->_matrix[2][2], $this->_matrix[3][2]], 
+							[ $this->_matrix[0][3], $this->_matrix[1][3], $this->_matrix[2][3], $this->_matrix[3][3]] ];
+		return $tMtx;
+	}
 }
 
 ?>
