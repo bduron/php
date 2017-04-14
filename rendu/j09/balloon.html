@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ballon</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="bal" ></div>
+
+	<script>
+		
+		var ballon = document.getElementById("bal");
+
+		ballon.addEventListener('mouseenter', function(){
+				var color = document.getElementById("bal").style.backgroundColor;
+
+
+			    ballon.style.backgroundColor = 'green';
+			}, false);
+
+
+		ballon.addEventListener('click', function(){
+				var width = document.getElementById("bal").offsetWidth;
+				var height = document.getElementById("bal").offsetHeight;
+
+				if (width < 420)
+			   	{	
+			    	ballon.style.width = (width + 10) + 'px';
+					ballon.style.height = (height + 10) + 'px';
+				}
+				else 
+				{
+			    	ballon.style.width = '200px';
+					ballon.style.height = '200px';
+				}
+			}, false);
+	
+
+		ballon.addEventListener('mouseleave', function(){
+			    ballon.style.width = '100px';
+			    ballon.style.height = '100px';
+			}, false);
+	
+	</script>
+</body>
+</html>
+
+
+
