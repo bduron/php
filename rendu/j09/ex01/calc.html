@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title></title>
+</head>
+<body>
+        <form action="" onsubmit="return validateForm()">
+                <input type="text" id="x">
+                <select id="op" name="">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+					<option value="%">%</option>
+				</select>
+                <input type="text" id="y">
+                <input type="submit" value="Try me!">
+        </form>
+		<script>
+			function validateForm()
+			{
+				var x = parseInt(document.getElementById("x").value);
+				var y = parseInt(document.getElementById("y").value);
+				var op = document.getElementById("op").value;
+				var res;
+				
+
+				if (isNaN(x) || isNaN(y) || x < 0 || y < 0)	
+				{
+					console.log("Error :(");
+					alert("Error :(");	
+
+				}
+				else 
+				{	
+					if (y == 0 && (op == '/' || op == '%')) 
+					{
+						console.log("It's over 9000!");	
+						alert("It's over 9000!");	
+					}
+					else
+					{
+						switch (op)
+						{
+							case '+':
+								res = x + y;
+								break;
+
+							case '-':
+								res = x - y;
+								break;
+
+							case '*':
+								res = x * y;
+								break;
+
+							case '/':
+								res = x / y;
+								break;
+
+							case '%':
+								res = x % y;
+								break;
+
+						}	
+						console.log(res);	
+						alert(res);	
+					}
+				}
+			}
+			
+			function useMe()
+			{
+				setInterval(function() {
+				  alert("Please, use me...");
+				}, 30000);
+			}					
+
+			useMe();
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+
+<!-- LA COULEUR EST-ELLE BIEN PARAMETREE ? --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balloon</title>
+	<style>
+		#bal
+		{
+			width: 200px;
+			height: 200px;	
+			background-color: red;
+			border-radius: 100%;
+			margin: auto auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="bal" style="background-color: red;" ></div>
+
+	<script>
+		
+		var ballon = document.getElementById("bal");
+
+		ballon.addEventListener('click', function(){
+				var width = document.getElementById("bal").offsetWidth;
+				var height = document.getElementById("bal").offsetHeight;
+				var color = document.getElementById("bal").style.backgroundColor;
+
+				if (width < 420)
+			   	{	
+			    	ballon.style.width = (width + 10) + 'px';
+					ballon.style.height = (height + 10) + 'px';
+				}
+				else 
+				{
+			    	ballon.style.width = '200px';
+					ballon.style.height = '200px';
+				}
+
+				switch (color)
+				{
+					case 'green':	
+			 			ballon.style.backgroundColor = 'blue';
+						break;
+					case 'red':	
+			 			ballon.style.backgroundColor = 'green';
+						break;
+					case 'blue':	
+			 			ballon.style.backgroundColor = 'red';
+						break;
+				}	
+			}, false);
+	
+
+		ballon.addEventListener('mouseleave', function(){
+
+				var width = document.getElementById("bal").offsetWidth;
+				var height = document.getElementById("bal").offsetHeight;
+				var color = document.getElementById("bal").style.backgroundColor;
+
+				if (width > 200)
+			   	{	
+			    	ballon.style.width = (width - 5) + 'px';
+					ballon.style.height = (height - 5) + 'px';
+				}
+				else 
+				{
+			    	ballon.style.width = '200px';
+					ballon.style.height = '200px';
+				}
+
+				switch (color)
+				{
+					case 'green':	
+			 			ballon.style.backgroundColor = 'red';
+						break;
+					case 'red':	
+			 			ballon.style.backgroundColor = 'blue';
+						break;
+					case 'blue':	
+			 			ballon.style.backgroundColor = 'green';
+						break;
+				}	
+			}, false);
+	
+	</script>
+</body>
+</html>
